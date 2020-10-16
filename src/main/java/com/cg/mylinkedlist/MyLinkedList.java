@@ -62,8 +62,10 @@ public class MyLinkedList {
         temp.next=null;
 
     }
-    public void addAfter(int prev,int data)
-    {
+    public boolean addAfter(int prev,int data) {
+        if(!search(prev)) {
+            return false;
+        }
         Node n=new Node(data);
         Node temp=head;
         while(temp.data!=prev)
@@ -71,13 +73,14 @@ public class MyLinkedList {
             if(temp.next==null)
             {
                 System.out.println("Previous value not found");
-                return;
+                return false;
             }
             temp=temp.next;
         }
         Node n1=temp.next;
         temp.next=n;
         n.next=n1;
+        return true;
     }
     public void print()
     {
