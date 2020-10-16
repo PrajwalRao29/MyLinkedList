@@ -15,5 +15,11 @@ public class LinkedListMain {
         l1.addToEnd(30);
         l1.addToEnd(70);
         l1.print();
+        //add after a specific element
+        MyLinkedList l2 = new MyLinkedList();
+        l2.addToEnd(56);
+        l2.addToEnd(70);
+        l2.addAfter(56,30);
+        l2.print();
     }
 }

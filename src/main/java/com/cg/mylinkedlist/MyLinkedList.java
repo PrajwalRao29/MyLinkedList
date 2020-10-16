@@ -33,6 +33,23 @@ public class MyLinkedList {
             temp.next=n;
         }
     }
+    public void addAfter(int prev,int data)
+    {
+        Node n=new Node(data);
+        Node temp=head;
+        while(temp.data!=prev)
+        {
+            if(temp.next==null)
+            {
+                System.out.println("Previous value not found");
+                return;
+            }
+            temp=temp.next;
+        }
+        Node n1=temp.next;
+        temp.next=n;
+        n.next=n1;
+    }
     public void print()
     {
         Node n=head;
