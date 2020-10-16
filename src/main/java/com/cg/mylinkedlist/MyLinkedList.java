@@ -37,6 +37,16 @@ public class MyLinkedList {
     {
         head=head.next;
     }
+    public void popLast()
+    {
+        Node temp=head;
+        while(temp.next.next!=null)
+        {
+            temp=temp.next;
+        }
+        temp.next=null;
+
+    }
     public void addAfter(int prev,int data)
     {
         Node n=new Node(data);

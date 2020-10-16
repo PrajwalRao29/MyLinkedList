@@ -24,5 +24,8 @@ public class LinkedListMain {
         //pop
         l.pop();
         l.print();
+        //popLast
+        l1.popLast();
+        l1.print();
     }
 }
