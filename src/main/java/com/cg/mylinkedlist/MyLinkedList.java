@@ -33,6 +33,10 @@ public class MyLinkedList {
             temp.next=n;
         }
     }
+    public void pop()
+    {
+        head=head.next;
+    }
     public void addAfter(int prev,int data)
     {
         Node n=new Node(data);

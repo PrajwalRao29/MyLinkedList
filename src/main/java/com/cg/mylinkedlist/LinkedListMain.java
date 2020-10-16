@@ -21,5 +21,8 @@ public class LinkedListMain {
         l2.addToEnd(70);
         l2.addAfter(56,30);
         l2.print();
+        //pop
+        l.pop();
+        l.print();
     }
 }
