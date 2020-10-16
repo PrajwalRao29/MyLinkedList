@@ -3,6 +3,21 @@ package com.cg.mylinkedlist;
 public class MyLinkedList {
     Node head=null;
 
+    public boolean search(int data)
+    {
+        Node temp=head;
+        while(temp!=null)
+        {
+            if(temp.data==data)
+            {
+                System.out.println("Search Successful");
+                return true;
+            }
+            temp=temp.next;
+        }
+        System.out.println("Search Not Successful");
+        return false;
+    }
     public void addToStart(int data)
     {
         Node node=new Node(data);
