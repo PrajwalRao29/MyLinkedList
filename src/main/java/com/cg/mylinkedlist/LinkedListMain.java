@@ -4,7 +4,7 @@ public class LinkedListMain {
 
     public static void main(String[] args) {
         //add to the beginning
-        MyLinkedList l = new MyLinkedList();
+       MyLinkedList l = new MyLinkedList();
         l.addToStart(70);
         l.addToStart(30);
         l.addToStart(56);
@@ -30,5 +30,16 @@ public class LinkedListMain {
         //addAfterElement
         l2.addAfter(30,40);
         l2.print();
+        //delete
+        l2.delete(40);
+        l2.print();
+        //OrderedList
+        System.out.println("Sort and add");
+        MyLinkedList l3=new MyLinkedList();
+        l3.addSort(56);
+        l3.addSort(30);
+        l3.addSort(40);
+        l3.addSort(70);
+        l3.print();
     }
 }

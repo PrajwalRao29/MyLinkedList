@@ -30,5 +30,14 @@ public class TestMyLinkedList {
         l.addToEnd(70);
         Assert.assertTrue(l.search(40));
     }
+    @Test
+    public void test4DeleteElement() {
+        l.addToEnd(56);
+        l.addToEnd(30);
+        l.addToEnd(40);
+        l.addToEnd(70);
+        l.delete(40);
+        Assert.assertEquals(l.size(),3);
+    }
 }
 
